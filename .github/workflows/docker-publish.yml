@@ -26,5 +26,6 @@ jobs:
           password: ${{secrets.GITHUB_TOKEN}}
       - name: 'Build Inventory Image'
         run: |
-          docker build . --tag ghcr.io/spiner2000/python:latest
+          docker build . --tag ghcr.io/spiner2000/python:latest --tag ghcr.io/spiner2000/python:3.11
           docker push ghcr.io/spiner2000/python:latest
+          docker push ghcr.io/spiner2000/python:3.11
