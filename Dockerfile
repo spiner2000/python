@@ -11,4 +11,5 @@ RUN pip install --no-cache-dir pandas \
     lxml \
     xmlschema \
     requests \
-    xmltodict
+    xmltodict \
+    jax
