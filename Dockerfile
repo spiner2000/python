@@ -7,9 +7,9 @@ RUN update-ca-certificates
 ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 RUN pip install --no-cache-dir pandas \
     requests \
-    ytsaurus-yson ytsaurus-client \
+    ytsaurus-yson ytsaurus-client ytsaurus-rpc-driver\
     lxml \
     xmlschema \
     requests \
     xmltodict \
-    jax
+    jax 
